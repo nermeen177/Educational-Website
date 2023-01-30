@@ -1,0 +1,9 @@
+.footer {
+  @apply w-full p-12 bg-teal-700 text-white m-auto grid lg:grid-cols-3 sm:grid-cols-1 gap-x-20 gap-y-8;
+}
+.footer__gallery {
+  @apply grid grid-cols-3 md:grid-cols-6 lg:grid-cols-3 gap-2;
+}
+img {
+  @apply w-[100px] h-[70px];
+}

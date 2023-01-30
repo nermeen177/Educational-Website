@@ -1,0 +1,25 @@
+.navigation {
+  @apply fixed flex w-full h-10 flex-row justify-between items-center bg-teal-700 px-12 py-8 text-white;
+}
+.navigation__logo {
+  text-shadow: 0.5px 0.5px black;
+}
+.navigation__list {
+  @apply flex list-none;
+}
+.navigation__list-item {
+  @apply px-4 py-0 text-xl text-white hover:text-gray-800;
+  text-shadow: 0.3px 0.3px black;
+}
+
+@media screen and (max-width: 1024px) {
+  .navigation__list {
+    @apply absolute flex-col justify-around items-center top-0 -left-full w-full h-screen duration-300 p-36 bg-[rgba(0,0,0,.85)] text-right;
+  }
+  .navigation__list-item {
+    @apply hover:text-teal-700;
+  }
+  .navigation__list--active {
+    @apply left-0;
+  }
+}
